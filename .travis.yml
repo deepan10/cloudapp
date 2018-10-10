@@ -2,3 +2,7 @@ language: java
 sudo : false
 script: 
         - echo "Hello World"
+
+notifications:
+  slack: deepan10:nTGqbkpHVVQ159ViRSnpQIjv
+  on_start: change
