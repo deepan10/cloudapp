@@ -12,11 +12,12 @@ addons:
 before_install:
   - echo "Before Install"
 install:
-  - echo "Install"
+  - sudo wget https://mirror.openshift.com/pub/openshift-v3/clients/3.11.16/linux/oc.tar.gz
+  - sudo tar -xvf oc.tar.gz -C /usr/bin/
 before_script:
   - echo "Before Script"
 script:
-  - echo "Script"
+  - oc version
 
 notifications:
   slack: deepan10:nTGqbkpHVVQ159ViRSnpQIjv
