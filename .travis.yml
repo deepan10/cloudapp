@@ -11,14 +11,14 @@ language: java
 #    - openssl
 #    - libssl
 
-before_install:
-  - sudo apt-get update -y 
-  - sudo apt-get install openssl libssl-dev build-essential libssl1.0  -y 
-  - sudo ls -lrt  /usr/lib/x86_64-linux-gnu/libcrypto* 
-  - sudo openssl version
-  - sudo ln -s /usr/lib/x86_64-linux-gnu/libcrypto.so.0.9.8 /usr/lib/libcrypto.so.10
-  - sudo ln -s /usr/lib/x86_64-linux-gnu/libssl.so.0.9.8 /usr/lib/libssl.so.10
-  - sudo ls -lrt  /usr/lib/libcrypto*  
+#before_install:
+#  - sudo apt-get update -y 
+#  - sudo apt-get install openssl libssl-dev build-essential libssl1.0  -y 
+#  - sudo ls -lrt  /usr/lib/x86_64-linux-gnu/libcrypto* 
+#  - sudo openssl version
+#  - sudo ln -s /usr/lib/x86_64-linux-gnu/libcrypto.so.0.9.8 /usr/lib/libcrypto.so.10
+#  - sudo ln -s /usr/lib/x86_64-linux-gnu/libssl.so.0.9.8 /usr/lib/libssl.so.10
+#  - sudo ls -lrt  /usr/lib/libcrypto*  
 
 install:
   - sudo wget https://mirror.openshift.com/pub/openshift-v3/clients/3.10.1/linux/oc.tar.gz
