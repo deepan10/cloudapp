@@ -17,7 +17,7 @@ before_install:
   - sudo ls -lrt  /usr/lib/x86_64-linux-gnu/libcrypto* 
   - sudo openssl version
   - sudo ln -s /usr/lib/x86_64-linux-gnu/libcrypto.so.0.9.8 /usr/lib/libcrypto.so.10
-  - sudo ls -lrt  /usr/lib/x86_64-linux-gnu/libcrypto*  
+  - sudo ls -lrt  /usr/lib/libcrypto*  
 
 install:
   - sudo wget https://mirror.openshift.com/pub/openshift-v3/clients/3.11.0-0.9.0/linux/oc.tar.gz
