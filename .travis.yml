@@ -5,14 +5,16 @@ sudo: required
 
 language: java
 
-addons:
-  apt:
-    packages:
-    - openssl
-    - libssl
+#addons:
+#  apt:
+#    packages:
+#    - openssl
+#    - libssl
 
 before_install:
-  - echo "Before Install"
+  - apt-get update
+  - apt-get install openssl
+  - apt-get install libssl
 install:
   - sudo wget https://mirror.openshift.com/pub/openshift-v3/clients/3.11.16/linux/oc.tar.gz
   - sudo tar -xvf oc.tar.gz -C /usr/bin/
