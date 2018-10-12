@@ -21,7 +21,7 @@ before_install:
   - sudo ls -lrt  /usr/lib/libcrypto*  
 
 install:
-  - sudo wget https://mirror.openshift.com/pub/openshift-v3/clients/3.11.0-0.9.0/linux/oc.tar.gz
+  - sudo wget https://mirror.openshift.com/pub/openshift-v3/clients/3.10.1/linux/oc.tar.gz
   - sudo tar -xvf oc.tar.gz -C /usr/bin/
 before_script:
   - echo "Before Script"
