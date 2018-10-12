@@ -12,9 +12,9 @@ language: java
 #    - libssl
 
 before_install:
-  - apt-get update
-  - apt-get install openssl
-  - apt-get install libssl
+  - sudo apt-get update
+  - sudo apt-get install openssl
+  - sudo apt-get install libssl
 install:
   - sudo wget https://mirror.openshift.com/pub/openshift-v3/clients/3.11.16/linux/oc.tar.gz
   - sudo tar -xvf oc.tar.gz -C /usr/bin/
