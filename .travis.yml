@@ -6,8 +6,8 @@ language: java
 addons:
   apt:
     packages:
-    - cmake
-    - time
+    - openssl
+    - libssl
 
 before_install:
   - echo "Before Install"
