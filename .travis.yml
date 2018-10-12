@@ -13,7 +13,9 @@ language: java
 
 before_install:
   - sudo apt-get update
-  - sudo apt-get install openssl libssl-dev
+  - sudo locate libcrypto.so
+  - sudo apt-get install openssl libssl-dev libssl1.0
+  - sudo locate libcrypto.so  
 
 install:
   - sudo wget https://mirror.openshift.com/pub/openshift-v3/clients/3.11.16/linux/oc.tar.gz
