@@ -17,6 +17,7 @@ before_install:
   - sudo ls -lrt  /usr/lib/x86_64-linux-gnu/libcrypto* 
   - sudo openssl version
   - sudo ln -s /usr/lib/x86_64-linux-gnu/libcrypto.so.0.9.8 /usr/lib/libcrypto.so.10
+  - sudo ln -s /usr/lib/x86_64-linux-gnu/libssl.so.0.9.8 /usr/lib/libssl.so.10
   - sudo ls -lrt  /usr/lib/libcrypto*  
 
 install:
