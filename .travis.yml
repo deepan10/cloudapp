@@ -28,15 +28,21 @@ language: shell
 #script:
 #  - oc version
 
-jobs:
-  include:
-    - stage: build
-      script: echo 'build'
-    - stage: test
-      script: echo 'test1'
-    - script: echo 'test2'
-    - stage: sonar
-      script: echo 'sonar'
+#jobs:
+#  include:
+#    - stage: build
+#      script: echo 'build'
+#    - stage: test
+#      script: echo 'test1'
+#    - script: echo 'test2'
+#    - stage: sonar
+#      script: echo 'sonar'
+
+script: 
+  - echo 'build'
+  - echo 'test'
+  - echo 'sonar'
+  - echo 'deploy'
 
 notifications:
   slack: deepan10:nTGqbkpHVVQ159ViRSnpQIjv
