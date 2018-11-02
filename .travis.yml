@@ -44,6 +44,13 @@ script:
   - echo 'sonar'
   - echo 'deploy'
 
+env:
+  global:
+    - CI_NODE_TOTAL=2
+  matrix:
+    - CI_NODE_INDEX=0
+    - CI_NODE_INDEX=1
+
 notifications:
   slack: deepan10:nTGqbkpHVVQ159ViRSnpQIjv
   on_start: change
