@@ -1,9 +1,9 @@
-os:
-  - linux
+#os:
+#  - linux
 
-sudo: required
+#sudo: required
 
-language: java
+language: shell
 
 #addons:
 #  apt:
@@ -33,7 +33,8 @@ jobs:
     - stage: build
       script: echo 'build'
     - stage: test
-      script: echo 'test'
+      script: echo 'test1'
+    - script: echo 'test2'
     - stage: sonar
       script: echo 'sonar'
 
